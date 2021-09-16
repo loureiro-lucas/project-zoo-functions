@@ -8,24 +8,24 @@ Furthermore, __soft skills__ like _time management__ were essencial for the suce
 
 `Requirements:`
 
-- ##### 1 - Implement the function `getSpeciesByIds`
+- #### 1 - Implement the function `getSpeciesByIds`
 
 This function is responsible for searching the animal species by id. It returns an array containing the species referring to the ids passed as a parameter, which can receive one or more ids.
 
   - If it receives no parameters, it must return an empty array.
 
-- ##### 2 - Implement the function `getAnimalsOlderThan`
+- #### 2 - Implement the function `getAnimalsOlderThan`
 
 This function, from the name of a species and a minimum age, checks if all animals of that species have the specified minimum age and returns a boolean.
 
-- ##### 3 - Implement the function `getEmployeeByName`
+- #### 3 - Implement the function `getEmployeeByName`
 
 This function is responsible for searching for employee through their first or last name.
 
   - Without parameters, returns an empty object;
   - When the employee's first or last name is provided, the employee's object must be returned.
 
-- ##### 4 - Implement the function `getRelatedEmployees`
+- #### 4 - Implement the function `getRelatedEmployees`
 
 Divide it into two functions:
   
@@ -36,7 +36,7 @@ Divide it into two functions:
   - if it is not a manager, an error generated with the constructor function **Error** of the standard JavaScript library should be thrown with the message "The id entered is not of a manager!".
 <br>
 
-- ##### 5 - Implement the function `countAnimals`
+- #### 5 - Implement the function `countAnimals`
 
 This function is responsible for counting the number of animals of each species.
 
@@ -45,7 +45,7 @@ This function is responsible for counting the number of animals of each species.
   - With the argument `{ specie: 'giraffes', gender: 'female' }`, it returns a number, the number of female giraffes.
 <br>
 
-- ##### 6 - Implement the function `calculateEntry`
+- #### 6 - Implement the function `calculateEntry`
 
 This function will receive an array of visitors in the following format:
 
@@ -68,7 +68,7 @@ You must isolate the part of the logic in the `countEntrants` function that is i
 
 The function's return must be an object in the following format: `{ child: 3, adult: 2, senior: 1 }`.
 
-- ##### 7. Implement the function `getAnimalMap`
+- #### 7. Implement the function `getAnimalMap`
 
 The function is responsible for the geographic mapping of species and their animals, and can also filter them by alphabetical order and gender.
 
@@ -79,7 +79,7 @@ The function is responsible for the geographic mapping of species and their anim
 - With the `sex: 'female'` or `sex: 'male'` option specified and the `sort: true` option specified, it returns only male/female animal names with the animal names sorted;
 - Only returns ordered and gendered information if `includeNames: true` is specified, else returns aninals categorized by location.
 
-- ##### 8. Implement the function `getSchedule`
+- #### 8. Implement the function `getSchedule`
 
 The function is responsible for making the animals' time information available in a query to the user, who may want to have access to the schedule of the week, of a day or of a specific animal.
 
@@ -88,11 +88,11 @@ The function is responsible for making the animals' time information available i
 - If a single day is passed, it returns the times for that day and which animals will be available;
 - If an animal's name is passed, it must return an array with the days it will be displayed.
 
-- ##### 9. Implement the function `getOldestFromFirstSpecies`
+- #### 9. Implement the function `getOldestFromFirstSpecies`
 
 The function searches for information on the oldest animal of the first species managed by the employee in the parameter.
 
-- ##### 10. Implement the function `getEmployeesCoverage`
+- #### 10. Implement the function `getEmployeesCoverage`
 
 This function will be responsible for associating employee coverage information.
 
@@ -115,5 +115,4 @@ The function must receive an options object that will determine its behavior, as
 - When called without arguments, it should return an array with the coverage of all employees.
 - If no person is found with the first name, last name or id, an error generated with the constructor function **Error** of the standard JavaScript library with the message **"Invalid information"** should be raised.
 - Upon receiving the options object with the name property, it looks for the corresponding employee person;
-- The name option must accept first and last name to perform the search;
-- Ao chamar a função sem argumentos ela deve retornar um array com a cobertura de todas as pessoas funcionárias.
+- The name option must accept first and last name to perform the search.
