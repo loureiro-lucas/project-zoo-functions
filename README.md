@@ -34,7 +34,6 @@ Divide it into two functions:
 `getRelatedEmployees` - which uses the first function to display the following outputs:
   - if it is a manager, it must return an array containing the names of the employees it is responsible for;
   - if it is not a manager, an error generated with the constructor function **Error** of the standard JavaScript library should be thrown with the message "The id entered is not of a manager!".
-<br>
 
 - #### 5 - Implement the function `countAnimals`
 
@@ -43,7 +42,6 @@ This function is responsible for counting the number of animals of each species.
   - If no arguments are passed, it returns an object whose name of each species is a key to that object, and the total number of animals of that species is its value;
   - With the argument `{ specie: 'penguins' }`, returns a number, the number of penguins in the zoo;
   - With the argument `{ specie: 'giraffes', gender: 'female' }`, it returns a number, the number of female giraffes.
-<br>
 
 - #### 6 - Implement the function `calculateEntry`
 
@@ -59,7 +57,6 @@ const entrants = [
   { name: 'Carlos Nogueira', age: 50 },
 ];
 ```
-
 You must isolate the part of the logic in the `countEntrants` function that is in the same file as the `calculateEntry` function. It should receive the array of visitors and return an object with the count according to the following classification criteria:
 
 * People under the age of 18 are classified as children (child);
